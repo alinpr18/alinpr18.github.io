@@ -1,0 +1,40 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+import Icons from '../components/Icons.astro';
+---
+
+<Layout title="Ali Paredes Ramirez">
+  <div class="flex-block max-w-xl p-4 md:pd-8 mx-auto mt-8">
+    <div class="bg-white shadow overflow-hidden rounded-lg">
+      <div class="px-4 py-5 sm:px-6 flex justify-between">
+        <div>
+          <h1 class="text-xl leading-6 font-bold text-gray-900">
+            Ali Paredes Ramirez 🇻🇪
+          </h1>
+          <h2 class="text-sm leading-6 text-gray-500 -mt-1">@alinpr18</h2>
+          <p class="mt-1 max-w-2xl text-sm text-gray-500">
+            Aprendiendo Desarrollo Web en Platzi - Frontend Developer - #javascript #react #astro #tailwind 
+          </p>
+        </div>
+        <div>
+          <img class="rounded-lg w-48 bg-green-400" 
+            alt="Ali Paredes Ramirez" src="https://pbs.twimg.com/profile_images/1534340031854288898/L95PqGje_400x400.jpg" />
+        </div>
+      </div>
+      <div class="border-t border-gray-200">
+        <div class="bg-gray-50 px-4 py-5 w-full flex space-x-0.5">
+          <div class="mt-1 text-sm text-gray-900">
+            Apasianado de las nuevas tecnologías y criptomonedas, me gusta estar en constante aprendizaje. Actualmente me dedico a aprender y mejorar mis skills, puedes ver mis proyectos 👇🏼
+            <Icons />
+          </div>
+        </div>
+        <Card title="Portafolio" href="https://github.com/alinpr18" emoji="🚀" color="blue"/>
+        <Card title="Obtén un MES GRATIS en Platzi" href="https://platzi.com/r/alinpr18" emoji="🎁" color="lime"/>
+      </div>
+    </div>
+  </div>
+  <div class="flex-block max-w-xl p-4 md:pd-8 mx-auto mt-2 text-center">
+    Made with love in Venezuela
+  </div>
+</Layout>

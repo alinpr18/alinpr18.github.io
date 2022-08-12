@@ -1,0 +1,42 @@
+---
+export interface Props {
+	title: string;
+	href: string;
+	emoji: string;
+	color: string;
+}
+
+const { href, title, emoji, color } = Astro.props as Props;
+
+const bgColors = {
+	yellow: "bg-yellow-200",
+	blue: "bg-blue-200",
+	lime: "bg-lime-200",
+	rose: "bg-rose-200",
+	sky: "bg-sky-200",
+}
+
+const textColors = {
+	yellow: "text-yellow-600",
+	blue: "text-blue-600",
+	lime: "text-lime-600",
+	rose: "text-rose-600",
+	sky: "text-sky-600",
+}
+
+const hoverTextColors = {
+	yellow: "hover:text-yellow-800",
+	blue: "hover:text-blue-800",
+	lime: "hover:text-lime-800",
+	rose: "hover:text-rose-800",
+	sky: "hover:text-sky-800",
+}
+---
+
+<div class={`${bgColors[color]} px-4 py-5 w-full flex justify-between`}>
+	<a class={`text-sm font-bold ${textColors[color]} text-center ${hoverTextColors[color]} cursor-pointer`}
+		href={href} target="_blank">
+		{title}
+	</a>
+	<span>{emoji}</span>
+</div>
